@@ -6,6 +6,12 @@ html {
   font-size: 1.125rem;
 }
 
+@media (min-width: 70rem) {
+  html {
+  /*  increasing to 20px on bigger screens */
+    font-size: 1.25rem;
+  }
+}
 
 body {
   font-size: 1rem;
