@@ -1,36 +1,28 @@
-@import url("https://fonts.googleapis.com/css?family=Poppins&display=swap");
-@import url("https://fonts.googleapis.com/css?family=Roboto&display=swap");
-
 html {
-/*  base font is 18px  */
-  font-size: 1.125rem;
+  font-size: 1.125rem; /*  base font: 18px  */
 }
 
-@media (min-width: 70rem) {
+@media (min-width: 70em) {
   html {
-  /*  increasing to 20px on bigger screens */
-    font-size: 1.25rem;
+    font-size: 1.25rem; /*  increasing to 20px on bigger screens */
   }
 }
 
 body {
-  font-size: 1rem;
-  font-family: "Roboto", sans-serif;
+  min-height: 100vh;
+  font-family: "Lato", sans-serif;
   font-weight: 400;
   line-height: 1.58;
-  color: #333;
-  text-align: left;
 
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
 
   background-color: #fff;
-  min-height: 100vh;
+  color: #333;
 }
 
-p {
-  margin:0;
-  margin-bottom: 1.25rem;
+p + p {
+  margin: 1.25rem 0;
 }
 
 h1,
@@ -45,7 +37,7 @@ h5,
 .h5 {
   margin: 2.75rem 0 1rem;
   font-family: "Poppins", sans-serif;
-  font-weight: 400;
+  font-weight: 600;
   line-height: 1.15;
 }
 
@@ -71,10 +63,4 @@ h4,
 
 small {
   font-size: 0.75rem;
-}
-
-.container {
-  margin: 50px auto;
-  padding: 0 0.8rem;
-  max-width: 800px;
 }
